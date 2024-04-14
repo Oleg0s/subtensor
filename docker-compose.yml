@@ -26,6 +26,7 @@ services:
       - "9933"
     environment:
       - CARGO_HOME=/var/www/node-subtensor/.cargo
+    restart: always
 
   mainnet-lite:
     <<: *common
